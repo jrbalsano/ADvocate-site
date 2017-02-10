@@ -6,6 +6,8 @@ const mongoUri = argv.mongoUri;
 const port = argv.port || 3000;
 
 MongoClient.connect(mongoUri).then(db => {
+    app.use(express.static('static'));
+
     app.get('/sponsors', function(req, res, cb) {
         db.collection('sponsors').aggregate([
             { $group: { _id: '$host', urls: { $push: '$url' }, paths: { $push: '$path' }}},
@@ -21,5 +23,6 @@ MongoClient.connect(mongoUri).then(db => {
     app.listen(port, function() {
       console.log('ADvocate server listening on port 3000!')
     });
+
 });
 
