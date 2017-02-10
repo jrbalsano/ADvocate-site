@@ -1,0 +1,24 @@
+{
+  "name": "advocate-site",
+  "version": "0.0.1",
+  "description": "Website for the ADvocate ad tracker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrbalsano/ADvocate-site.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jrbalsano/ADvocate-site/issues"
+  },
+  "homepage": "https://github.com/jrbalsano/ADvocate-site#readme",
+  "dependencies": {
+    "express": "^4.14.1",
+    "minimist": "^1.2.0",
+    "mongodb": "^2.2.22"
+  }
+}
