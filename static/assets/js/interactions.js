@@ -8,7 +8,7 @@ $(document).ready(function() {
             $resultElement.find('.hostname-container').text(host);
             $resultElement.find('.url-container').text(urls[0]);
             $resultElement.find('.path-count-container').text(paths.length);
-            $resultElement.find('.hostname-link').attr('href', host);
+            $resultElement.find('.hostname-link').attr('href', 'http://' + host);
             $('#all-results').append($resultElement);
         });
         $('#search').focus();
